@@ -1,3 +1,0 @@
-- name: Test SSH and list files
-  run: |
-    ssh -v -o StrictHostKeyChecking=no ubuntu@15.207.54.118 'ls -la /var/www/html/'
