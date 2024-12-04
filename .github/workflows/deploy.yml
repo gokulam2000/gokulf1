@@ -23,9 +23,9 @@ jobs:
       # Step 3: Deploy to EC2
       - name: Deploy to EC2
         run: |
-          ssh -v -o StrictHostKeyChecking=no ubuntu@15.207.54.118 << EOF
+          ssh -v -o StrictHostKeyChecking=no ubuntu@3.110.50.227 << EOF
           sudo rm -rf /var/www/html/*
           exit
           EOF
 
-          scp -r ./* ubuntu@15.207.54.118:/var/www/html/
+          scp -r ./* ubuntu@3.110.50.227:/var/www/html/
